@@ -1,6 +1,6 @@
 import React from "react";
-import { FaArrowUp, FaArrowDown, FaWind } from "react-icons/fa";
 import { BiHappy } from "react-icons/bi";
+import { FaArrowDown, FaArrowUp, FaWind } from "react-icons/fa";
 import { MdCompress, MdOutlineWaterDrop } from "react-icons/md";
 
 const Description = ({ weather, units }) => {
@@ -52,9 +52,9 @@ const Description = ({ weather, units }) => {
     },
   ];
   return (
-    <div className="grid grid-cols-3 gap-12">
+    <div className="w-full grid grid-cols-3 gap-12">
       {cards.map(({ id, icon, title, data, unit }) => (
-        <div key={id} className="w-[100%] h-[100%] flex flex-col items-center justify-between p-4 text-[16px] rounded-xl bg-[var(--secondary-color)]">
+        <div key={id} className="w-full h-[100%] flex flex-col items-center justify-between p-4 text-[16px] rounded-xl bg-[var(--secondary-color)]">
           <div className="w-full flex flex-row items-center justify-center mb-2">
             {icon}
             <small className="ml-2">{title}</small>

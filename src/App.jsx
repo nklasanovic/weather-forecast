@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Hot from "./assets/images/summer.jpg";
 import Cold from "./assets/images/winter.jpg";
 import Description from "./components/Description";
@@ -57,7 +57,7 @@ const App = () => {
                 onClick={(e) => handleUnits(e)}
                 className="px-2.5 py-12 border-none rounded-lg text-xl font-semibold hover:cursor-pointer"
               >
-                F
+                °F
               </button>
             </div>
 
@@ -76,7 +76,6 @@ const App = () => {
               </div>
             </div>
 
-            {/* bottom description */}
             <Description weather={weather} units={units} />
           </div>
         )}
